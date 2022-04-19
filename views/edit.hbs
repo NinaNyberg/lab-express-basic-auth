@@ -1,0 +1,30 @@
+<form method='POST' action='/edit'>
+  <label for='input-fullname'>Name</label>
+  <input
+    id='input-fullname'
+    type='text'
+    name='fullname'
+    placeholder='Full Name'
+    value='{{user.fullname}}'
+    required
+  />
+  <label for='input-name'>Username</label>
+  <input
+    id='input-name'
+    type='text'
+    name='username'
+    placeholder='Username'
+    value='{{user.username}}'
+    required
+  />
+  <label for='input-password'>Password</label>
+  <input
+    id='input-password'
+    type='password'
+    name='password'
+    placeholder='Password'
+    value='{{user.password}}'
+    required
+  />
+  <button type='submit'>Edit</button>
+</form>
